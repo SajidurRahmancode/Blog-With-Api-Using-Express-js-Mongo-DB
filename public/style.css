@@ -1,0 +1,3 @@
+body { background: #f8f9fa; }
+#blogs-list .card { margin-bottom: 1rem; }
+#alert-area { position: fixed; top: 1rem; right: 1rem; z-index: 9999; }

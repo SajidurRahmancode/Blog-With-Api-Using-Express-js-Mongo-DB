@@ -10,8 +10,8 @@ router.use(express.json({ limit: "5mb" }));
 router.use(express.urlencoded({ extended: true, limit: "5mb" }));
 
 
-router.post("/createcomment",CreateCommentController);
-router.get("/ReadBlogComment/:blogID",ReadBlogWithCommentController);
+router.post("/createcomment",verifyToken,CreateCommentController);
+router.get("/ReadBlogComment/:blogID",verifyToken,ReadBlogWithCommentController);
 
 
 
